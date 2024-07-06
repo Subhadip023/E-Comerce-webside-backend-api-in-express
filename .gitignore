@@ -3,7 +3,7 @@ node_modules/
 
 # Ignore environment-specific files
 .env
-
+TEST.JS
 # Ignore any logs or temporary files
 *.log
 npm-debug.log*
