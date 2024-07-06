@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation</title>
+</head>
+<body>
+    <h1>API Documentation</h1>
+    <h2>User Routes</h2>
+    <h3>GET /api/user</h3>
+    <p>Returns a message indicating the User Route.</p>
+
+    <h3>POST /api/user/register</h3>
+    <p>Registers a new user. Requires the following fields:</p>
+    <ul>
+        <li>name: string (required)</li>
+        <li>email: string (required)</li>
+        <li>confirmEmail: string (required)</li>
+        <li>password: string (required)</li>
+        <li>confirmPassword: string (required)</li>
+        <li>avatar: file (required)</li>
+        <li>address: string (required)</li>
+    </ul>
+
+    <h3>POST /api/user/verify-email</h3>
+    <p>Verifies the user's email using an OTP. Requires the following field:</p>
+    <ul>
+        <li>otp: string (required)</li>
+    </ul>
+</body>
+</html>
