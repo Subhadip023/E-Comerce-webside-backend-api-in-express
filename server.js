@@ -32,6 +32,5 @@ app.get('/', (req, res) => {
 app.use('/api/user', userRoutes);
 
 app.listen(process.env.PORT, () => {
-    console.log(`Server is running on port http://localhost:${port}`);
+    console.log(`Server is running on port http://localhost:${process.env.PORT}`);
 });
- 
