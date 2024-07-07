@@ -8,7 +8,6 @@ import path from 'path';
 dotenv.config();
 
 const app = express();
-const port = 5000;
 
 app.use(express.json({ extended: true }));
 app.use(express.urlencoded({ extended: true }));
@@ -32,6 +31,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/user', userRoutes);
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
     console.log(`Server is running on port http://localhost:${port}`);
 });
+ 
